@@ -1,11 +1,15 @@
 $( document ).ready(function() {
+    //Storing current viewport width on load
     var globalWidth = $(window).width();
-
+    
+    //Determines if menu button is need based on current viewport width
     if (globalWidth >= 720) {
             $("#menubtn").hide();
         }
     
+    //If viewport is dynamically/manually changed after document load
     $(window).resize(function() {
+
         var newWidth = $(window).width();
         var navIsOpen = $("#headerTitle").height();
         
@@ -20,15 +24,14 @@ $( document ).ready(function() {
             $("#headerTitle").height(65);
         }
         
-        if (newWidth <= 720 && navIsOpen === 355) {
-            $("#headerTitle").height(355);
-        }
-
     });
     
+    //Menu visibility functionality
     $("#menubtn").click(function() {
+        
         var curHeaderHeight = $("#headerTitle").height();
         var currentWidth = $(window).width();
+        
         if (currentWidth <= 720) {
             $("#headerTitle").stop(true,false).animate({height: '355px'}, 250, function(){});  
         }
