@@ -14,7 +14,8 @@
     font-size: 1em; }
   #header #headerTitle {
     background-color: rgba(255, 255, 255, 0.5);
-    float: right;
+    position: fixed;
+    right: 0;
     text-align: right;
     width: 650px;
     margin-right: 50px;
