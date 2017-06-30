@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+
+    $(this).scrollTop(0);
     //Storing current viewport width on load
     var globalWidth = $(window).width();
     
