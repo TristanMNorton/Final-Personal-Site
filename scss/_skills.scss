@@ -1,0 +1,45 @@
+#skills {
+    background-color: $midblue;
+    padding: 20px;
+    color: $darkblue;
+    text-align: center;
+    h1 {
+        font-size: 3em;
+        background-color: $backgroundshade;
+        padding-top: 20px;
+    }
+}
+
+#skillSection {
+    display: flex;
+    flex-direction: column;
+    background-color: $backgroundshade;
+    padding: 20px;
+    
+}
+
+.skillSectionHalf {
+    display: flex;
+    flex-direction: row;
+}
+
+.skillSectionContainer {
+    width: 100%;
+    img {
+        width: 50%;
+        margin: 20px;
+    }
+}
+
+#skillSeperator {
+    height: 20px;
+}
+@media (max-width: 580px) {
+    #skillSection {
+        flex-direction: row;
+    }
+    .skillSectionHalf {
+        flex-direction: column;
+        width: 100%;
+    }
+}

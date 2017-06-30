@@ -1,8 +1,7 @@
 #header {
     width: 100vw;
     height: 100vh;
-    
-    overflow-x: hidden; 
+    overflow: hidden;
     background-image: url('../img/heroImage.JPG');
     background-size: cover;
     background-position: center;
@@ -16,7 +15,6 @@
     }
     #headerTitle {
         background-color: $lightblue;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
         color: $darkblue;
         position: absolute;
         right: 0;
