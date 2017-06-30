@@ -2,3 +2,8 @@
 @import '_assets.scss';
 @import '_header.scss';
 @import '_biography.scss';
+
+body
+{
+    overflow-x: hidden; 
+}
