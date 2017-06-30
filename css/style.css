@@ -17,7 +17,10 @@
   #header h2 {
     font-size: 1em; }
   #header #headerTitle {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #d1faff;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    color: #1c67a8;
     position: absolute;
     right: 0;
     text-align: right;
@@ -46,7 +49,7 @@
     text-align: center; }
     #header nav p {
       width: 100%;
-      border: 1px solid black;
+      border: 1px solid #1c67a8;
       margin: 0 12px 16px 12px; }
       #header nav p:first-child {
         margin-right: 12px; }
@@ -91,4 +94,28 @@
     margin-bottom: -7px; } }
 
 #bio {
-  display: block; }
+  display: block;
+  padding: 20px;
+  background-color: #d1faff; }
+  #bio img {
+    margin: 20px 0px 20px 0;
+    border-radius: 50%;
+    border: 10px solid #1c67a8; }
+  #bio h1 {
+    margin-bottom: 10px;
+    font-size: 3em; }
+  #bio p {
+    color: black;
+    font-size: 12; }
+
+#bioHead {
+  text-align: center; }
+
+#bioWrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  max-width: 600px;
+  margin: auto;
+  color: #1c67a8; }

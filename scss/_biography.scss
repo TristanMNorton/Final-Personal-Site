@@ -1,3 +1,31 @@
 #bio {
     display: block;
+    padding: 20px;
+    background-color: $lightblue;
+    img {
+        margin: 20px 0px 20px 0;
+        border-radius: 50%;
+        border: 10px solid $darkblue;
+    }
+    h1 {
+        margin-bottom: 10px;
+        font-size: 3em;
+    }
+    p {
+        color: black;
+        font-size: 12;
+    }
+}
+
+#bioHead {
+    text-align: center;
+}
+
+#bioWrapper {
+    background-color: $backgroundshade;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+    max-width: 600px;
+    margin: auto; 
+    color: $darkblue;
 }
