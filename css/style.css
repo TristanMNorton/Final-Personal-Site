@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lora', serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -13,11 +13,16 @@
   background-size: cover;
   background-position: center; }
   #header h1 {
-    font-size: 3em;
+    font-size: 4em;
     padding: 0;
-    margin-bottom: -15px; }
+    margin-bottom: -15px;
+    font-family: 'Dancing Script', cursive;
+    color: #1c67a8; }
   #header h2 {
-    font-size: 1em; }
+    font-size: 1em;
+    margin-top: 5px;
+    color: #1c67a8;
+    font-family: 'Lora', serif; }
   #header #headerTitle {
     background-color: #d1faff;
     color: #1c67a8;
@@ -50,26 +55,32 @@
     #header nav p {
       width: 100%;
       border: 1px solid #1c67a8;
-      margin: 0 12px 16px 12px; }
+      margin: 0 12px 16px 12px;
+      padding: 5px 0 5px 0;
+      font-family: 'Lora', serif;
+      color: #1c67a8; }
       #header nav p:first-child {
         margin-right: 12px; }
       #header nav p:last-child {
         margin-left: 12px; }
 
-@media (max-width: 720px) {
+@media (max-width: 740px) {
   #header #headerTitle {
     width: 100%;
     margin: 0;
     text-align: left;
     padding: 0;
     overflow: hidden;
-    height: 65px; }
+    height: 65px;
+    color: #E8D0A9; }
   #header h1 {
     font-size: 2em;
-    margin-left: 20px; }
+    margin-left: 20px;
+    margin-top: 7px; }
   #header h2 {
     font-size: .67em;
-    margin-left: 20px; }
+    margin-left: 20px;
+    margin-top: 10px; }
   #header nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -84,7 +95,7 @@
 @media (max-width: 580px) {
   #header h1 {
     font-size: 1.5em;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: -7px; } }
 
 @media (max-width: 400px) {
@@ -97,8 +108,16 @@
   display: block;
   width: 100%;
   padding: 20px;
-  background-color: #d1faff;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background: #159957;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left top, #159957, #155799);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right bottom, left top, from(#159957), to(#155799));
+  background: -webkit-linear-gradient(right bottom, #159957, #155799);
+  background: -o-linear-gradient(right bottom, #159957, #155799);
+  background: linear-gradient(to left top, #159957, #155799);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   #bio img {
     margin: 20px 0px 20px 0;
     border-radius: 50%;
@@ -107,10 +126,13 @@
     max-width: 300px; }
   #bio h1 {
     margin-bottom: 10px;
-    font-size: 3em; }
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+    color: #1c67a8; }
   #bio p {
     color: black;
-    font-size: 12; }
+    font-size: 12;
+    font-family: 'Lora', serif; }
 
 #bioHead {
   text-align: center; }
@@ -128,9 +150,11 @@
   color: #1c67a8;
   text-align: center; }
   #skills h1 {
-    font-size: 3em;
+    font-size: 4em;
     background-color: rgba(255, 255, 255, 0.5);
-    padding-top: 20px; }
+    padding-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    color: #1c67a8; }
 
 #skillSection {
   display: -webkit-box;
@@ -179,6 +203,40 @@
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%; } }
+
+#workHistory {
+  font-family: 'Lora', serif;
+  padding: 20px;
+  background: #159957;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left top, #159957, #155799);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right bottom, left top, from(#159957), to(#155799));
+  background: -webkit-linear-gradient(right bottom, #159957, #155799);
+  background: -o-linear-gradient(right bottom, #159957, #155799);
+  background: linear-gradient(to left top, #159957, #155799);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  #workHistory h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    text-align: center;
+    color: #1c67a8;
+    margin-bottom: 20px; }
+  #workHistory ul {
+    margin-left: 40px; }
+
+#workWrapper {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: calc(800px - 20px);
+  margin: auto; }
+
+.workItem {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 3px dotted #1c67a8; }
+  .workItem ul {
+    margin-top: 20px; }
 
 body {
   overflow-x: hidden; }

@@ -2,8 +2,10 @@
     display: block;
     width: 100%;
     padding: 20px;
-    background-color: $lightblue;
     overflow-x: hidden;
+    background: #159957; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left top, #159957, #155799); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left top, #159957, #155799); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     img {
         margin: 20px 0px 20px 0;
         border-radius: 50%;
@@ -14,10 +16,13 @@
     h1 {
         margin-bottom: 10px;
         font-size: 3em;
+        font-family: 'Dancing Script', cursive;
+        color: $darkblue;
     }
     p {
         color: black;
         font-size: 12;
+        font-family: 'Lora', serif;
     }
 }
 
