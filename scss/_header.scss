@@ -4,10 +4,10 @@
     overflow: hidden;
     background-image: url('../img/heroImage.JPG');
     background-size: cover;
-    background-position: center;
+    background-position: 35%;
     h1 {
         font-size: 4em;
-        padding: 0;
+        padding: 20px 20px 0 20px;
         margin-bottom: -10px;
         font-family: 'Dancing Script', cursive;
         color: $darkblue;
@@ -27,7 +27,6 @@
         text-align: right;
         margin-right: 50px;
         margin-top: 50px;
-        padding: 20px 20px 0 20px;
         animation-duration: 1s;
         img {
             width: 30px;
@@ -35,6 +34,7 @@
             right: 20px;
             z-index: 50;
             position: absolute;
+            cursor: pointer;
         }
     }
     nav {
@@ -45,16 +45,15 @@
         
         p {
             width: 100%;
-            margin: 0 12px 16px 12px;
-            padding: 10px 0 5px 0;
+            padding: 20px 0 20px 0;
             font-family: 'Questrial', sans-serif;
             color: $darkblue;
-            &:first-child{
-            margin-right: 12px;
-        }
-            &:last-child{
-            margin-left: 12px;
-        }
+            transition: .15s;
+            cursor: pointer;
+            &:hover {
+                background-color: $darkblue;
+                color: $lightblue;
+            }
         }
         
     }
@@ -74,6 +73,7 @@
             font-size: 2em;
             margin-left: 20px;
             margin-top: 7px;
+            padding: 0;
         }
         h2 {
             font-size: .67em;

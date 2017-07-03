@@ -17,7 +17,7 @@ $( document ).ready(function() {
         
         if (newWidth >= 720) {
             $("#menubtn").hide();
-            $("#headerTitle").height(149);
+            $("#headerTitle").height(178);
         } else if (newWidth <= 720 && navIsOpen === 325) {
             $("#menubtn").show();
             $("#headerTitle").height(325);
