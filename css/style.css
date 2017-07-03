@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Lora', serif;
+  font-family: 'Questrial', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -15,14 +15,15 @@
   #header h1 {
     font-size: 4em;
     padding: 0;
-    margin-bottom: -15px;
+    margin-bottom: -10px;
     font-family: 'Dancing Script', cursive;
     color: #1c67a8; }
   #header h2 {
-    font-size: 1em;
-    margin-top: 5px;
+    font-size: .9em;
     color: #1c67a8;
-    font-family: 'Lora', serif; }
+    font-family: 'Questrial', sans-serif;
+    margin-top: 5px;
+    text-align: center; }
   #header #headerTitle {
     background-color: #d1faff;
     color: #1c67a8;
@@ -54,10 +55,9 @@
     text-align: center; }
     #header nav p {
       width: 100%;
-      border: 1px solid #1c67a8;
       margin: 0 12px 16px 12px;
-      padding: 5px 0 5px 0;
-      font-family: 'Lora', serif;
+      padding: 10px 0 5px 0;
+      font-family: 'Questrial', sans-serif;
       color: #1c67a8; }
       #header nav p:first-child {
         margin-right: 12px; }
@@ -80,7 +80,8 @@
   #header h2 {
     font-size: .67em;
     margin-left: 20px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    text-align: left; }
   #header nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -90,7 +91,7 @@
     width: calc(100% - 23px); }
     #header nav p {
       margin: 10px;
-      padding: 10px 0 10px 0; } }
+      padding: 15px 0 10px 0; } }
 
 @media (max-width: 580px) {
   #header h1 {
@@ -132,13 +133,16 @@
   #bio p {
     color: black;
     font-size: 12;
-    font-family: 'Lora', serif; }
+    font-family: 'Questrial', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px; }
 
 #bioHead {
   text-align: center; }
 
 #bioWrapper {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   max-width: calc(800px - 20px);
   margin: auto;
@@ -151,7 +155,7 @@
   text-align: center; }
   #skills h1 {
     font-size: 4em;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     padding-top: 20px;
     font-family: 'Dancing Script', cursive;
     color: #1c67a8; }
@@ -166,7 +170,7 @@
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px; }
 
 .skillSectionHalf {
@@ -205,7 +209,7 @@
     width: 100%; } }
 
 #workHistory {
-  font-family: 'Lora', serif;
+  font-family: 'Questrial', sans-serif;
   padding: 20px;
   background: #159957;
   /* fallback for old browsers */
@@ -215,7 +219,8 @@
   background: -webkit-linear-gradient(right bottom, #159957, #155799);
   background: -o-linear-gradient(right bottom, #159957, #155799);
   background: linear-gradient(to left top, #159957, #155799);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #1c67a8; }
   #workHistory h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 4em;
@@ -223,11 +228,13 @@
     color: #1c67a8;
     margin-bottom: 20px; }
   #workHistory ul {
-    margin-left: 40px; }
+    margin-left: 20px;
+    line-height: 1.5;
+    color: black; }
 
 #workWrapper {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   max-width: calc(800px - 20px);
   margin: auto; }
 
@@ -237,6 +244,15 @@
   border-bottom: 3px dotted #1c67a8; }
   .workItem ul {
     margin-top: 20px; }
+  .workItem h2 {
+    font-size: 2em;
+    padding-bottom: 10px; }
+  .workItem h3 {
+    font-size: 1em;
+    font-style: italic;
+    padding-bottom: 5px; }
+  .workItem h4 {
+    font-size: .8em; }
 
 body {
   overflow-x: hidden; }
