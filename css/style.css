@@ -36,8 +36,8 @@
     animation-duration: 1s; }
     #header #headerTitle img {
       width: 30px;
-      top: 20px;
-      right: 20px;
+      top: 25px;
+      right: 25px;
       z-index: 50;
       position: absolute;
       cursor: pointer; }
