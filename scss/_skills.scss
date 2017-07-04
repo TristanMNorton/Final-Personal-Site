@@ -27,6 +27,8 @@
 
 .skillSectionContainer {
     width: 100%;
+    transition: .5s;
+    transition: all 1s ease;
     img {
         width: 50%;
         margin: 20px;

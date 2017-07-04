@@ -28,11 +28,11 @@
         margin-right: 50px;
         margin-top: 50px;
         animation-duration: 1s;
-        img {
+        #menubtn {
             width: 30px;
             top: 20px;
             right: 20px;
-            z-index: 50;
+            z-index: 999;
             position: absolute;
             cursor: pointer;
         }
