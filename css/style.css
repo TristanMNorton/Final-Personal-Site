@@ -152,16 +152,18 @@
   color: #1c67a8; }
 
 #skills {
-  background-color: #9bd1e5;
+  background-color: #d1faff;
   padding: 20px;
   color: #1c67a8;
-  text-align: center; }
+  text-align: center;
+  color: #1c67a8; }
   #skills h1 {
     font-size: 4em;
-    background-color: rgba(255, 255, 255, 0.8);
     padding-top: 20px;
     font-family: 'Dancing Script', cursive;
-    color: #1c67a8; }
+    max-width: 800px;
+    margin: auto;
+    text-align: center; }
 
 #skillSection {
   display: -webkit-box;
@@ -173,8 +175,9 @@
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px; }
+  padding: 20px;
+  max-width: 800px;
+  margin: auto; }
 
 .skillSectionHalf {
   display: -webkit-box;
@@ -194,7 +197,8 @@
   transition: .5s;
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
-  transition: all 1s ease; }
+  transition: all 1s ease;
+  max-height: 400px; }
   .skillSectionContainer img {
     width: 50%;
     margin: 20px; }
@@ -266,6 +270,50 @@
     padding-bottom: 5px; }
   .workItem h4 {
     font-size: .8em; }
+
+footer {
+  padding: 20px;
+  background-color: #d1faff;
+  color: #1c67a8; }
+
+#formWrapper {
+  padding: 20px;
+  max-width: calc(800px - 20px);
+  margin: auto;
+  text-align: center; }
+  #formWrapper form {
+    text-align: left;
+    max-width: 500px;
+    margin: auto; }
+    #formWrapper form p {
+      margin: 10px 0 20px 0; }
+  #formWrapper label {
+    font-weight: 900; }
+  #formWrapper input {
+    margin: 5px 0 15px 0;
+    line-height: 1.2;
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #1c67a8;
+    font-size: 1.2em; }
+  #formWrapper textarea {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 10px;
+    border: none;
+    resize: none;
+    font-size: 1.2em; }
+  #formWrapper h1 {
+    font-size: 4em;
+    font-family: 'Dancing Script', cursive; }
+  #formWrapper button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top: 5px;
+    color: #1c67a8; }
 
 body {
   overflow-x: hidden; }

@@ -1,23 +1,25 @@
 #skills {
-    background-color: $midblue;
+    background-color: $lightblue;
     padding: 20px;
     color: $darkblue;
     text-align: center;
+    color: $darkblue;
     h1 {
         font-size: 4em;
-        background-color: $backgroundshade;
         padding-top: 20px;
         font-family: 'Dancing Script', cursive;
-        color: $darkblue;
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
     }
 }
 
 #skillSection {
     display: flex;
     flex-direction: column;
-    background-color: $backgroundshade;
     padding: 20px;
-    
+    max-width: 800px;
+    margin: auto;
 }
 
 .skillSectionHalf {
@@ -29,6 +31,7 @@
     width: 100%;
     transition: .5s;
     transition: all 1s ease;
+    max-height: 400px;
     img {
         width: 50%;
         margin: 20px;
