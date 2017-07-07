@@ -1,11 +1,7 @@
 #bio {
-    display: block;
-    width: 100%;
-    padding: 20px;
-    overflow-x: hidden;
-    background: #159957; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left top, #159957, #155799); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left top, #159957, #155799); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 50%;
+    background-color: #cdd28c;
+    vertical-align: bottom;
     img {
         margin: 20px 0px 20px 0;
         border-radius: 50%;
@@ -34,9 +30,13 @@
 }
 
 #bioWrapper {
-    background-color: $backgroundshade;
-    padding: 20px;
-    max-width: calc(800px - 20px);
-    margin: auto;
+    padding: 40px;
     color: $darkblue;
+    width: 100%;
+}
+
+@media (max-width: 740px) {
+  #bio {
+    width: 100%;
+  }
 }

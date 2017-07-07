@@ -8,5 +8,26 @@
 
 body
 {
-    overflow-x: hidden; 
+    overflow-x: hidden;
+}
+
+#skillTestWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#bioSkillTestWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 740px) {
+  #bioSkillTestWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  #skillTestWrapper {
+    width: 100%;
+  }
 }

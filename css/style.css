@@ -109,19 +109,9 @@
     margin-bottom: -7px; } }
 
 #bio {
-  display: block;
-  width: 100%;
-  padding: 20px;
-  overflow-x: hidden;
-  background: #159957;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left top, #159957, #155799);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, right bottom, left top, from(#159957), to(#155799));
-  background: -webkit-linear-gradient(right bottom, #159957, #155799);
-  background: -o-linear-gradient(right bottom, #159957, #155799);
-  background: linear-gradient(to left top, #159957, #155799);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  width: 50%;
+  background-color: #cdd28c;
+  vertical-align: bottom; }
   #bio img {
     margin: 20px 0px 20px 0;
     border-radius: 50%;
@@ -145,25 +135,29 @@
   text-align: center; }
 
 #bioWrapper {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  max-width: calc(800px - 20px);
-  margin: auto;
-  color: #1c67a8; }
+  padding: 40px;
+  color: #1c67a8;
+  width: 100%; }
+
+@media (max-width: 740px) {
+  #bio {
+    width: 100%; } }
 
 #skills {
-  background-color: #d1faff;
-  padding: 20px;
   color: #1c67a8;
   text-align: center;
-  color: #1c67a8; }
+  float: right;
+  background-color: #e1e4ba;
+  width: 100%; }
   #skills h1 {
-    font-size: 4em;
+    font-size: 3em;
     padding-top: 20px;
     font-family: 'Dancing Script', cursive;
+    color: #1c67a8;
     max-width: 800px;
     margin: auto;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 20px; }
 
 #skillSection {
   display: -webkit-box;
@@ -175,51 +169,83 @@
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-width: 100%;
+  margin: auto;
   padding: 20px;
-  max-width: 800px;
-  margin: auto; }
-
-.skillSectionHalf {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row; }
-
-.skillSectionContainer {
-  width: 100%;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  max-height: 400px; }
-  .skillSectionContainer img {
-    width: 50%;
-    margin: 20px; }
-
-#skillSeperator {
-  height: 20px; }
-
-@media (max-width: 580px) {
-  #skillSection {
+  padding-bottom: 60px; }
+  #skillSection .skillSectionHalf {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
-    flex-direction: row; }
-  .skillSectionHalf {
+    flex-direction: row;
+    margin: auto; }
+
+.skillSectionContainer {
+  width: 100%; }
+  .skillSectionContainer p {
+    font-size: 12px;
+    margin-top: 5px; }
+  .skillSectionContainer img {
+    width: 50%; }
+
+#skillSeperator {
+  height: 40px; }
+
+#testimonial {
+  background-color: #f5f6e8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 100%;
+  padding: 60px; }
+  #testimonial #testWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%; } }
+    flex-direction: column; }
+    #testimonial #testWrapper p {
+      margin-bottom: 5px; }
+    #testimonial #testWrapper img {
+      width: 40px;
+      position: absolute;
+      z-index: -1; }
+  #testimonial h1 {
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+    color: #1c67a8;
+    text-align: center;
+    padding-bottom: 20px; }
+
+@media (max-width: 740px) {
+  #skills {
+    padding-bottom: 40px; }
+  .skillSectionHalf {
+    width: 80%; }
+  #skillSection {
+    width: 100%;
+    padding: 0; }
+    #skillSection h1 {
+      width: 100%; }
+    #skillSection img {
+      width: 40px; } }
 
 #workHistory {
   font-family: 'Questrial', sans-serif;
@@ -247,7 +273,7 @@
 
 #workWrapper {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
   max-width: calc(800px - 20px);
   margin: auto;
   text-align: center; }
@@ -317,3 +343,40 @@ footer {
 
 body {
   overflow-x: hidden; }
+
+#skillTestWrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 50%; }
+
+#bioSkillTestWrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+@media (max-width: 740px) {
+  #bioSkillTestWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  #skillTestWrapper {
+    width: 100%; } }

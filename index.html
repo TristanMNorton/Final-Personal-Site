@@ -11,24 +11,24 @@
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 </head>
-<body> 
-    
+<body>
+
     <!-- Top Section with Header and Menu -->
     <section id="header">
         <div id="headerTitle">
             <h1>Tristan Malexander Norton</h1>
             <h2>Designer // Front-End Developer // Musician</h2>
             <nav>
-                <p>Biography</p>
-                <p>Skills</p>
-                <p>Work History</p>
-                <p>Contact</p>
+                <p class="navLink">Biography</p>
+                <p class="navLink">Skills</p>
+                <p class="navLink">Portfolio</p>
+                <p class="navLink">Contact</p>
             </nav>
             <img id="menubtn" src="img/menubuttom.png">
         </div>
     </section>
-    
     <!-- Biography Section -->
+    <div id="bioSkillTestWrapper">
     <section id="bio">
         <div id="bioWrapper">
         <div id="bioHead">
@@ -36,17 +36,14 @@
             <img src="img/profilePic.jpg">
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex purus, sollicitudin sed mollis nec, hendrerit eget ex. Quisque congue nunc eu eleifend finibus. Morbi scelerisque porta ligula, nec auctor nulla pulvinar eget. Cras feugiat sodales dolor in faucibus. Phasellus consequat ac elit vel bibendum. Morbi vel eros at risus malesuada vulputate. Curabitur vitae tempor lorem, id finibus risus. Aliquam tempus ut dolor non vehicula. Nunc lectus metus, scelerisque quis lacus et, imperdiet laoreet quam. Donec dapibus ultrices aliquet. Phasellus molestie sapien nulla, eget dignissim arcu semper eu. Suspendisse ac sem ac sem laoreet tempus. In hac habitasse platea dictumst.</p>
-
-        <p>Sed vitae arcu in nulla ultricies condimentum a eu turpis. Praesent erat est, consequat eget elit a, molestie interdum tortor. Morbi gravida placerat mauris sit amet efficitur. Quisque quis sodales tortor, ac dignissim risus. Cras non luctus diam. Nullam rhoncus tincidunt tortor a ultricies. Pellentesque mollis et lacus vel tristique. Donec ex nibh, mollis in turpis vitae, imperdiet lobortis massa. Morbi eget orci eu nunc condimentum efficitur et sit amet neque. Cras sed maximus arcu. Integer nec viverra mi. Aliquam nec augue fermentum, scelerisque lectus at, mollis elit. Vestibulum aliquet magna risus, efficitur porttitor nisl fringilla eget. Donec quis imperdiet elit.</p>
-
-        <p>Suspendisse efficitur nec tortor a venenatis. Integer condimentum ex quis volutpat venenatis. Pellentesque luctus pretium lorem quis sollicitudin. Donec viverra venenatis neque. Cras non pulvinar sem, nec venenatis leo. Phasellus et eros in ligula luctus gravida. Pellentesque cursus tincidunt justo, non facilisis est scelerisque quis. Fusce fermentum, ex quis interdum pellentesque, libero sem fringilla ante, at luctus tortor erat et tellus. Nulla sapien ex, faucibus ac risus eu, auctor volutpat tortor. Phasellus vel erat elit. Nam nec fermentum nulla.</p>
-        </div>
     </section>
-    
+
     <!-- Skills Section -->
+    <div id="skillTestWrapper">
     <section id="skills">
-    <h1>Skills</h1>
     <div id="skillSection">
+
+      <h1>Skills</h1>
         <div class="skillSectionHalf">
             <div class="skillSectionContainer">
                 <img src="img/icons/indesign.png">
@@ -80,7 +77,7 @@
                 <p>Javascript</p>
             </div>
             <div class="skillSectionContainer">
-                <img src="img/icons/jquery.png"> 
+                <img src="img/icons/jquery.png">
                 <p>jQuery</p>
             </div>
             <div class="skillSectionContainer">
@@ -92,9 +89,18 @@
                 <p>GIT</p>
             </div>
         </div>
-    </div> 
+
+    </div>
     </section>
-    
+    <section id="testimonial">
+      <div id="testWrapper">
+        <h1>Testimonials</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex purus, sollicitudin sed mollis nec, hendrerit eget ex. Quisque congue nunc eu eleifend finibus. Morbi scelerisque porta ligula, nec auctor nulla pulvinar eget. Cras feugiat sodales dolor in faucibus. Phasellus consequat ac elit vel bibendum. Morbi vel eros at risus malesuada vulputate. Curabitur vitae tempor lorem, id finibus risus. Aliquam tempus ut dolor non vehicula. Nunc lectus metus, scelerisque quis lacus et, imperdiet laoreet quam.""</p>
+        <p>Mr. Smork - Bleepdy Bloop Inc.</p>
+      </div>
+    </section>
+  </div>
+</div>
     <!-- Work History Section -->
     <section id="workHistory">
         <div id="workWrapper">
@@ -191,12 +197,12 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Contact Secion -->
     <footer>
         <div id="formWrapper">
             <h1>Contact</h1>
-            
+
             <form>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex purus, sollicitudin sed mollis nec, hendrerit eget ex. </p>
                 <form id="simpleform">
@@ -208,14 +214,14 @@
 					<div><textarea name="description" id="description" rows="10" cols="50"></textarea></div>
 					<div><button>Send</button></div>
 				</form>
-            
+
             </form>
         </div>
     </footer>
-    
+
     <!-- jQuery Resource -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+
     <!-- Scripts for Visuals and Mobile Responsiveness -->
     <script src="scripts/navmenu.js"></script>
     <script src="scripts/onloadanis.js"></script>
