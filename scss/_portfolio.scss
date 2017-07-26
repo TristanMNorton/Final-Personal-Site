@@ -1,0 +1,52 @@
+#title {
+    margin: 20px 0 40px 0;
+    h1 {
+        text-align: center;
+        font-size: 4em;
+        margin-bottom: -10px;
+        font-family: 'Dancing Script', cursive;
+        color: $darkblue;
+    }
+}
+
+#portfolioItems {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    margin: auto;
+    max-width: 800px;
+    .portCol {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        .portItem {
+            text-align: center;
+            max-width: 200px;
+            P {
+                line-height: 1;
+            }
+            img {
+                width: 70%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+  #portfolioItems {
+      flex-direction: row;
+      .portCol {
+          flex-direction: column;
+          width: 100%;
+          .portItem {
+              margin: auto;
+              max-width: 200px;
+              p {
+                  margin-bottom: 20px;
+              }
+          }
+      }
+  }
+}
