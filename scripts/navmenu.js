@@ -18,9 +18,9 @@ $( document ).ready(function() {
         if (newWidth >= 720) {
             $("#menubtn").hide();
             $("#headerTitle").height(178);
-        } else if (newWidth <= 720 && navIsOpen === 325) {
+        } else if (newWidth <= 720 && navIsOpen === 255) {
             $("#menubtn").show();
-            $("#headerTitle").height(325);
+            $("#headerTitle").height(255);
         } else {
             $("#menubtn").show();
             $("#headerTitle").height(65);
@@ -35,7 +35,7 @@ $( document ).ready(function() {
         var currentWidth = $(window).width();
         
         if (currentWidth <= 720) {
-            $("#headerTitle").stop(true,false).animate({height: '325px'}, 250, function(){});  
+            $("#headerTitle").stop(true,false).animate({height: '255px'}, 250, function(){});  
         }
         if (curHeaderHeight > 70) {
             $("#headerTitle").stop(true,false).animate({height: '65px'}, 250, function(){});  
