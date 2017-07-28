@@ -381,10 +381,23 @@ footer {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  color: white; }
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  transition: .25s; }
   #portFullDisplayWrapper #portFullItemWrapper {
     margin: auto;
     max-width: 400px; }
+    #portFullDisplayWrapper #portFullItemWrapper #closeButton {
+      position: absolute;
+      margin-left: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+      cursor: pointer; }
+    #portFullDisplayWrapper #portFullItemWrapper img {
+      width: 100%; }
 
 body {
   overflow-x: hidden; }
