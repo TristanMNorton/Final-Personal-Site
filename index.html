@@ -19,7 +19,7 @@
             <h1>Tristan Malexander Norton</h1>
             <h2>Designer // Front-End Developer // Musician</h2>
             <nav>
-                <p class="navLink" id="aboutLink">About</p>
+                <p class="navLink" id="aboutLink">Abouddt</p>
                 <p class="navLink" id="portfolioLink">Portfolio</p>
                 <p class="navLink" id="contactLink">Contact</p>
             </nav>
@@ -107,37 +107,37 @@
         </div>
         <div id="portfolioItems">
             <div class="portCol">
-                <div class="portItem">
+                <div class="portItem" onclick="void(0)">
                     <img src="http://via.placeholder.com/200x200" title="Bleepty" alt="thisisa;oiefa">
                     <p>lorem</p>
                 </div>
-                <div class="portItem">
+                <div class="portItem" onclick="void(0)">
                     <img src="http://via.placeholder.com/200x201" title="asdf" alt="thiewrtwertw;oiefa">
                     <p>lorem</p>
                 </div>
-                <div class="portItem">
+                <div class="portItem" onclick="void(0)">
                     <img src="http://via.placeholder.com/200x202" title="Blqyghty" alt="thisisbhnnnoiefa">
                     <p>lorem</p>
                 </div>
-                <div class="portItem">
+                <div class="portItem" onclick="void(0)">
                     <img src="http://via.placeholder.com/200x203" title="Bl23234pty" alt="thisis52666oiefa">
                     <p>lorem</p>
                 </div>
             </div>
             <div class="portCol">
-                <div class="portItem">
+                <div class="portItem" onclick="void(0)">
                     <img src="http://via.placeholder.com/200x204" title="Blbmnbmnbmnty" alt="thisaeswre;oiefa">
                     <p>lorem</p>
                 </div>
-                <div class="portItem">
+                <div class="portItem" onclick="void(0)">
                     <img src="http://via.placeholder.com/200x205" title="Bq35y5ypty" alt="thisis3e456yh5hfa">
                     <p>lorem</p>
                 </div>
-                <div class="portItem">
+                <div class="portItem" onclick="void(0)">
                     <img src="http://via.placeholder.com/200x206" title="Blgw54g245hy" alt="thi453tyb;oiefa">
                     <p>lorem</p>
                 </div>
-                <div class="portItem">
+                <div class="portItem" onclick="void(0)">
                     <img src="http://via.placeholder.com/200x207" title="Bleewgbsdfdty" alt="this34t2q345345;oiefa">
                     <p>lorem</p>
                 </div>
@@ -159,19 +159,17 @@
         <div id="formWrapper">
             <h1>Contact</h1>
 
-            <form>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex purus, sollicitudin sed mollis nec, hendrerit eget ex. </p>
-                <form id="simpleform">
-					<div><label for="myName">Your name</label></div>
-					<div><input type="text" name="myName" id="myName"></div>
-					<div><label for="email">Email</label></div>
-					<div><input type="text" name="email" id="email"></div>
-					<div><label for="description">A brief description of work needed</label></div>
-					<div><textarea name="description" id="description" rows="10" cols="50"></textarea></div>
-					<div><button>Send</button></div>
+                <form action="https://formspree.io/tristan.m.norton@gmail.com" method="POST">
+					<label for="myName">Your name</label>
+					<input type="text" name="name" id="myName">
+					<label for="email">Email</label>
+					<input type="text" name="_replyto" id="email">
+					<label for="description" name="description">A brief description of work needed</label>
+					<textarea name="description" id="description" rows="10" cols="50"></textarea>
+					<button type="submit" value="Send">Send</button>
 				</form>
 
-            </form>
         </div>
     </footer>
 
