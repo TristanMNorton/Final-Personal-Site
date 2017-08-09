@@ -2,7 +2,7 @@
     color: $darkblue;
     text-align: center;
     float: right;
-    background-color: #e1e4ba;
+    background-color: #cdd28c;
     width: 100%;
     h1 {
         font-size: 3em;
@@ -46,21 +46,22 @@
 }
 
 #testimonial {
-  background-color: #f5f6e8;
   display: flex;
   justify-content: space-around;
-  padding: 60px;
   #testWrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    margin-top: 40px;
     p {
       margin-bottom: 5px;
+      line-height: 1.4;
     }
     img {
-      width: 40px;
-      position: absolute;
-      z-index: -1;
+      width: 60px;
+      margin: 30px;
+      cursor: pointer;
+      &:hover {
+        transition-duration: .25s;
+        transform: scale(1.1);
+      }
     }
   }
   h1 {
@@ -69,6 +70,11 @@
       color: $darkblue;
       text-align: center;
       padding-bottom: 20px;}
+}
+
+#socIcons {
+  display: flex;
+  flex-direction: row;
 }
 
 @media (max-width: 740px) {

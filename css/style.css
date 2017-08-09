@@ -1,3 +1,4 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@
   background-size: cover;
   background-position: 35%; }
   #header h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     padding: 20px 20px 0 20px;
     margin-bottom: -10px;
     font-family: 'Dancing Script', cursive;
@@ -25,13 +26,12 @@
     margin-top: 5px;
     text-align: center; }
   #header #headerTitle {
-    background-color: #d1faff;
-    color: #1c67a8;
+    color: #d1faff;
     position: absolute;
     right: 0;
     text-align: right;
     margin-right: 50px;
-    margin-top: 50px;
+    margin-top: 25px;
     -webkit-animation-duration: 1s;
     animation-duration: 1s; }
     #header #headerTitle img {
@@ -64,7 +64,7 @@
       cursor: pointer; }
       #header nav p:hover {
         background-color: #1c67a8;
-        color: #d1faff; }
+        color: white; }
 
 @media (max-width: 740px) {
   #header #headerTitle {
@@ -108,12 +108,28 @@
     margin-top: 10px;
     margin-bottom: -7px; } }
 
+.st0 {
+  fill: none; }
+
+.st1 {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: 10s 3s ease infinite;
+  animation: 10s 3s ease infinite; }
+
+.st2 {
+  fill: #d1faff; }
+
+.st3 {
+  fill: #d1faff; }
+
 #bio {
   width: 50%;
   background-color: #cdd28c;
   vertical-align: bottom; }
   #bio img {
-    margin: 20px 0px 20px 0;
+    margin: 20px 0px 40px 0;
     border-radius: 50%;
     border: 10px solid #1c67a8;
     width: calc(100% - 20px);
@@ -128,7 +144,7 @@
     font-size: 12;
     font-family: 'Questrial', sans-serif;
     font-size: 1em;
-    line-height: 1;
+    line-height: 1.4;
     margin-bottom: 20px; }
 
 #bioHead {
@@ -147,7 +163,7 @@
   color: #1c67a8;
   text-align: center;
   float: right;
-  background-color: #e1e4ba;
+  background-color: #cdd28c;
   width: 100%; }
   #skills h1 {
     font-size: 3em;
@@ -197,41 +213,46 @@
   height: 40px; }
 
 #testimonial {
-  background-color: #f5f6e8;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
-  padding: 60px; }
+  justify-content: space-around; }
   #testimonial #testWrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column; }
+    margin-top: 40px; }
     #testimonial #testWrapper p {
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      line-height: 1.4; }
     #testimonial #testWrapper img {
-      width: 40px;
-      position: absolute;
-      z-index: -1; }
+      width: 60px;
+      margin: 30px;
+      cursor: pointer; }
+      #testimonial #testWrapper img:hover {
+        -webkit-transition-duration: .25s;
+        -o-transition-duration: .25s;
+        transition-duration: .25s;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
   #testimonial h1 {
     font-size: 3em;
     font-family: 'Dancing Script', cursive;
     color: #1c67a8;
     text-align: center;
     padding-bottom: 20px; }
+
+#socIcons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
 
 @media (max-width: 740px) {
   #skills {
@@ -247,11 +268,11 @@
       width: 40px; } }
 
 #title {
-  margin: 20px 0 40px 0; }
+  margin-bottom: 40px;
+  padding-top: 20px; }
   #title h1 {
     text-align: center;
     font-size: 4em;
-    margin-bottom: -10px;
     font-family: 'Dancing Script', cursive;
     color: #1c67a8; }
 
@@ -267,8 +288,7 @@
   flex-direction: column;
   line-height: 0;
   margin: auto;
-  max-width: 800px;
-  margin-bottom: 10px; }
+  max-width: 800px; }
   #portfolioItems .portCol {
     display: -webkit-box;
     display: -webkit-flex;
@@ -286,7 +306,6 @@
     #portfolioItems .portCol .portItem {
       text-align: center;
       max-width: 200px;
-      overflow: hidden;
       cursor: pointer; }
       #portfolioItems .portCol .portItem P {
         line-height: 1; }
@@ -294,12 +313,14 @@
         width: 70%;
         margin-bottom: 10px; }
         #portfolioItems .portCol .portItem img:hover {
-          width: 75%;
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1);
           -webkit-transition-duration: .2s;
           -o-transition-duration: .2s;
           transition-duration: .2s; }
 
-@media (max-width: 540px) {
+@media (max-width: 360px) {
   #portfolioItems {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -319,9 +340,25 @@
         #portfolioItems .portCol .portItem p {
           margin-bottom: 20px; } }
 
+#portDesign {
+  position: absolute;
+  z-index: -1; }
+
+.st4 {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: 10s 3s ease infinite;
+  animation: 10s 3s ease infinite; }
+
+.st5 {
+  fill: #e1e4ba; }
+
+.st6 {
+  fill: #cdd28c; }
+
 footer {
   padding: 20px;
-  background-color: #d1faff;
+  background-color: #e1e4ba;
   color: #1c67a8; }
 
 #formWrapper {
@@ -344,14 +381,16 @@ footer {
     border: none;
     background: none;
     border-bottom: 1px solid #1c67a8;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    outline: 0; }
   #formWrapper textarea {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     margin-top: 10px;
     border: none;
     resize: none;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    outline: 0; }
   #formWrapper h1 {
     font-size: 4em;
     font-family: 'Dancing Script', cursive; }
@@ -389,8 +428,9 @@ footer {
   transition: .25s; }
   #portFullDisplayWrapper #portFullItemWrapper {
     margin: auto;
-    max-width: 400px; }
+    max-width: 800px; }
     #portFullDisplayWrapper #portFullItemWrapper #closeButton {
+      color: gray;
       position: absolute;
       margin-left: 10px;
       margin-top: 10px;
@@ -399,8 +439,13 @@ footer {
     #portFullDisplayWrapper #portFullItemWrapper img {
       width: 100%; }
 
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif; }
+
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #e1e4ba; }
 
 #skillTestWrapper {
   display: -webkit-box;
@@ -423,7 +468,8 @@ body {
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  background-color: #cdd28c; }
 
 @media (max-width: 740px) {
   #bioSkillTestWrapper {

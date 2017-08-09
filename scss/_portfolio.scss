@@ -1,9 +1,10 @@
+
 #title {
-    margin: 20px 0 40px 0;
+    margin-bottom: 40px;
+    padding-top: 20px;
     h1 {
         text-align: center;
         font-size: 4em;
-        margin-bottom: -10px;
         font-family: 'Dancing Script', cursive;
         color: $darkblue;
     }
@@ -15,7 +16,6 @@
     line-height: 0;
     margin: auto;
     max-width: 800px;
-    margin-bottom: 10px;
     .portCol {
         display: flex;
         flex-direction: row;
@@ -24,7 +24,6 @@
         .portItem {
             text-align: center;
             max-width: 200px;
-            overflow: hidden;
             cursor: pointer;
             P {
                 line-height: 1;
@@ -33,7 +32,7 @@
                 width: 70%;
                 margin-bottom: 10px;
                 &:hover {
-                    width: 75%;
+                   transform: scale(1.1);
                    transition-duration: .2s;
                 }
             }
@@ -41,7 +40,7 @@
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 360px) {
   #portfolioItems {
       flex-direction: row;
       .portCol {
@@ -56,4 +55,21 @@
           }
       }
   }
+}
+
+#portDesign {
+    position: absolute;
+    z-index: -1;
+}
+
+.st4 {
+    width: 100%;
+    height: 100%;
+    animation: 10s 3s ease infinite;
+}
+.st5 {
+    fill: #e1e4ba;
+}
+.st6 {
+    fill: #cdd28c;
 }

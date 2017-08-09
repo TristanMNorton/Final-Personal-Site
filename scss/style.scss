@@ -6,10 +6,20 @@
 @import '_portfolio.scss';
 @import '_contact.scss';
 @import '_portItemDisplay.scss';
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+
 
 body
 {
     overflow-x: hidden;
+    
+  background-color: #e1e4ba;
 }
 
 #skillTestWrapper {
@@ -21,6 +31,7 @@ body
 #bioSkillTestWrapper {
   display: flex;
   flex-direction: row;
+  background-color: #cdd28c;
 }
 
 @media (max-width: 740px) {

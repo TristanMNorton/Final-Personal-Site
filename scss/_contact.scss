@@ -1,6 +1,6 @@
 footer {
     padding: 20px;
-    background-color: $lightblue;
+    background-color: #e1e4ba;
     color: $darkblue;
 }
 
@@ -28,6 +28,7 @@ footer {
         background: none;
         border-bottom: 1px solid $darkblue;
         font-size: 1.2em;
+        outline: 0;
     }
     textarea {
         width: 100%;
@@ -36,6 +37,7 @@ footer {
         border: none;
         resize: none;
         font-size: 1.2em;
+        outline: 0;
     }
     h1 {
         font-size: 4em;
