@@ -68,6 +68,7 @@
 
 @media (max-width: 740px) {
   #header #headerTitle {
+    background-color: rgba(209, 250, 255, 0.5);
     width: 100%;
     margin: 0;
     text-align: left;
@@ -267,12 +268,16 @@
     #skillSection img {
       width: 40px; } }
 
+#socMediaText {
+  text-align: center;
+  color: #1c67a8; }
+
 #title {
   margin-bottom: 40px;
   padding-top: 20px; }
   #title h1 {
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     font-family: 'Dancing Script', cursive;
     color: #1c67a8; }
 
@@ -358,7 +363,6 @@
 
 footer {
   padding: 20px;
-  background-color: #e1e4ba;
   color: #1c67a8; }
 
 #formWrapper {
@@ -392,7 +396,7 @@ footer {
     font-size: 1.2em;
     outline: 0; }
   #formWrapper h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-family: 'Dancing Script', cursive; }
   #formWrapper button {
     background: none;
@@ -422,10 +426,7 @@ footer {
   color: white;
   visibility: hidden;
   opacity: 0;
-  cursor: pointer;
-  -webkit-transition: .25s;
-  -o-transition: .25s;
-  transition: .25s; }
+  cursor: pointer; }
   #portFullDisplayWrapper #portFullItemWrapper {
     margin: auto;
     max-width: 800px; }
